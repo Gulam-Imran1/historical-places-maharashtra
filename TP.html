@@ -1,0 +1,231 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majha Maharashtra - Famous Tourist Places</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+   <style>/* General Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #000000;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    /* Dark Mode */
+    .dark-mode {
+        background-color: #121212;
+        color: white;
+    }
+    
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background-color: #007bff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .logo h1 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: #003f7f;
+    }
+    
+    /* Dark Mode Toggle Button */
+    .dark-mode-toggle {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s;
+    }
+    
+    .dark-mode-toggle:hover {
+        background: #0056b3;
+    }
+    
+    /* Search Bar */
+    #searchBar {
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #007bff;
+        outline: none;
+        width: 200px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    #searchBar:focus {
+        width: 250px;
+        border-color: #003f7f;
+    }
+    
+    /* Places Container */
+    .places-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px;
+    }
+    
+    /* Place Cards */
+    .place-card {
+        background-color: #f0f8ff;
+        border-radius: 12px;
+        padding: 15px;
+        margin: 15px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    .place-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 15px rgba(0, 123, 255, 0.5);
+    }
+    
+    .place-card img {
+        width: 100%;
+        height: 180px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    
+    .place-card h2 {
+        font-size: 20px;
+        color: #007bff;
+        margin: 10px 0;
+    }
+    
+    .place-card p {
+        font-size: 14px;
+        color: #333;
+        margin: 5px 0;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Maharashtra Tourism</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Historical Places</a></li>
+                <li><a href="#">Famous Places</a></li>
+                <li><a href="#" onclick="toggleDarkMode(); return false;">Dark Mode</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="searchBar" placeholder="Search places...">
+    </header>
+
+    <section class="places-container">
+       <div class="place-card">
+        <a href="tp1.html" target="_blank"> <img src="TP/mahaba" alt="Mahabaleshwar"> </a>
+        <h2>Mahabaleshwar</h2>
+        <p>A famous hill station known for its breathtaking views and strawberry farms.</p>
+        <a href="tp1.html" >read more</a>
+    </div></a>
+        <div class="place-card">
+           <a href="tp2.html" target="_blank"> <img src="TP/lonavala.jfif" alt="Lonavala"></a>
+            <h2>Lonavala</h2>
+            <p>A popular weekend getaway famous for waterfalls, caves, and lush greenery.</p>
+            <a href="tp2.html" >read more</a>
+        </div>
+        <div class="place-card">
+           <a href="tp3.html" target="_blank"> <img src="TP/Matheran.avif" alt="Matheran"></a>
+            <h2>Matheran</h2>
+            <p>Asia’s only automobile-free hill station, offering scenic views and fresh air.</p>
+            <a href="tp3.html" >read more</a>
+        </div>
+        <div class="place-card">
+            <a href="tp4.html" target="_blank"> <img src="TP/ganpati.jfif" alt="Ganpatipule"></a>
+            <h2>Ganpatipule</h2>
+            <p>A serene beach town known for its beautiful coastline and the Ganpati temple.</p>
+            <a href="tp4.html" >read more</a>
+        </div>
+        <div class="place-card">
+           <a href="tp5.html" target="_blank">  <img src="TP/panch.jfif" alt="Panchgani"></a>
+            <h2>Panchgani</h2>
+            <p>Renowned for its five hills, breathtaking scenery, and strawberry gardens.</p>
+            <a href="tp5.html" >read more</a>
+        </div>
+        <div class="place-card">
+            <a href="tp6.html" target="_blank"><img src="TP/tadoba.jpg" alt="Tadoba National Park"></a>
+            <h2>Tadoba National Park</h2>
+            <p>Tadoba national park is located in Chandrapur district of Maharashtra.</p>
+            <a href="tp6.html" >read more</a>
+        </div>
+        <div class="place-card">
+            <a href="tp7.html" target="_blank"><img src="TP/Ladghar Beach.avif" alt="Ladghar Beach"></a>
+            <h2>Ladghar Beach</h2>
+            <p>Ladghar Beach is Dapoli’s tranquil spot that is popular for its grainy shoreline, mesmeric crimson sunsets, thrilling water sports and dolphins.</p>
+            <a href="tp6.html" >read more</a>
+        </div>
+        <div class="place-card">
+            <a href="tp8.html" target="_blank"><img src="TP/8" alt="Louisa Point"></a>
+            <h2>Louisa Point</h2>
+            <p>Louisa Point is a popular viewpoint in Matheran, a charming hill station in the Indian state of Maharashtra.</p>
+            <a href="tp8.html" >read more</a>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("searchBar").addEventListener("keyup", function () {
+            let filter = this.value.toLowerCase();
+            let places = document.querySelectorAll(".place-card");
+            
+            places.forEach((place) => {
+                let title = place.querySelector("h2").innerText.toLowerCase();
+                if (title.includes(filter)) {
+                    place.style.display = "block";
+                } else {
+                    place.style.display = "none";
+                }
+            });
+        });
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
